@@ -1,13 +1,9 @@
-#!/usr/bin/node
+const languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
+let output = "";
 
-const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-let result = '';
-
-for (let i = 0; i < lines.length; i++) {
-  result += lines[i];
-  if (i < lines.length - 1) {
-    result += '\n';
-  }
+for (let i = 0; i < languages.length; i++) {
+  output += languages[i] + "\n";
 }
 
-console.log(result);
+console.log(output.slice(0, -1));
+
